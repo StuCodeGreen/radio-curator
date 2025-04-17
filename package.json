@@ -1,0 +1,26 @@
+{
+  "name": "radio-curator",
+  "version": "1.0.0",
+  "description": "⚙️ A utility script tool to curate and clean up internet radio station data from Radio Browser API. Designed to normalize data, merge custom entries, enrich metadata, and prepare final output for use in mobile apps or websites.",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "start": "ts-node src/index.ts",
+    "fetch": "ts-node src/fetchStations.ts"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "radio",
+    "radio-browser",
+    "curator",
+    "data-cleanup",
+    "json",
+    "typescript"
+  ],
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
