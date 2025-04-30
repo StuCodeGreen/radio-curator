@@ -18,4 +18,6 @@ yarn-error.log*
 .env.local
 
 # Optional secret override file (not committed)
-src/secretOverrides.ts
+src/stationOverrides.ts
+
+

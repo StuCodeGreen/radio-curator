@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "ts-node src/index.ts",
     "start": "ts-node src/index.ts",
-    "fetch": "ts-node src/fetchStations.ts"
+    "fetch": "ts-node src/fetchData.ts",
+    "build": "ts-node src/buildFinalData.ts"
   },
   "author": "Your Name",
   "license": "MIT",
