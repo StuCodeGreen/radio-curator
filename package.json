@@ -4,7 +4,6 @@
   "description": "⚙️ A utility script tool to curate and clean up internet radio station data from Radio Browser API. Designed to normalize data, merge custom entries, enrich metadata, and prepare final output for use in mobile apps or websites.",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "ts-node src/index.ts",
     "start": "ts-node src/index.ts",
     "fetch": "ts-node src/fetchData.ts",
     "build": "ts-node src/buildFinalData.ts"

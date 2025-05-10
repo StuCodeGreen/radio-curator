@@ -18,12 +18,8 @@ export function normaliseData(raw: StationApiRaw): Station {
     streamUrl: raw.url_resolved,
     homepage: raw.homepage,
     favicon: raw.favicon || 'https://your-default-icon.url/favicon.png',
-    country: raw.country,
-    countryCode: raw.countrycode,
-    languages: splitAndTrim(raw.language),
     tags: splitAndTrim(raw.tags),
     codec: raw.codec,
-    bitrate: raw.bitrate,
     isCustom: false,
     ...override,
   };

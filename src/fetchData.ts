@@ -25,6 +25,6 @@ export async function fetchAndSaveRawStations(): Promise<void> {
 }
 
 // Optional: auto-run when called directly
-if (process.argv[1].endsWith('fetchStations.ts')) {
+if (process.argv[1].endsWith('fetchData.ts')) {
   fetchAndSaveRawStations();
 }
