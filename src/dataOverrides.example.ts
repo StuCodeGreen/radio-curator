@@ -1,4 +1,4 @@
-export const stationOverrides = {
+export const dataOverrides = {
   'some-stationuuid': {
     nowPlayingUrl: 'https://my-private-api.com',
     parseNowPlaying: (data: unknown) => {
@@ -8,3 +8,4 @@ export const stationOverrides = {
     tags: ['electronic', 'chill'],
   }
 };
+

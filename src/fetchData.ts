@@ -28,3 +28,4 @@ export async function fetchAndSaveRawStations(): Promise<void> {
 if (process.argv[1].endsWith('fetchData.ts')) {
   fetchAndSaveRawStations();
 }
+

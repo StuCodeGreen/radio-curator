@@ -1,15 +1,15 @@
 import { StationApiRaw, Station } from './types';
-import { stationOverrides } from './stationOverrides';
+import { dataOverrides } from './dataOverrides';
 
 function getOverride(uuid: string) {
-  return stationOverrides[uuid] || {}
+  return dataOverrides[uuid] || {}
 }
 
 function splitAndTrim(input?: string): string[] {
   return input?.split(',').map(s => s.trim()) || [];
 }
 
-export function normaliseData(raw: StationApiRaw): Station {
+export function curateData(raw: StationApiRaw): Station {
   const override = getOverride(raw.stationuuid);
 
   return {

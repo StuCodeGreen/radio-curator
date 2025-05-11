@@ -29,3 +29,4 @@ export interface Station {
   nowPlayingUrl?: string;
   parseNowPlaying?: (data: unknown) => string;
 }
+
