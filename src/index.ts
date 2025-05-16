@@ -2,8 +2,9 @@
 import { fetchAndSaveRawStations } from './fetchData';
 import fs from 'fs/promises';
 import { StationApiRaw, Station } from './types';
-import { curateData } from './curateData';
- 
+import { curateData } from './curateData'; 
+import { manualData } from './manualData';
+
 async function runFullPipeline() {
   console.log('🚀 Starting full station curation process...');
  
@@ -16,9 +17,10 @@ async function runFullPipeline() {
 
   // 3. Curate
   const curated: Station[] = rawData.map(curateData);     
+  const finalList: Station[] = [...manualData, ...curated];
  
   // 4. Save curated list 
-  await fs.writeFile('output/stations.json', JSON.stringify(curated, null, 2), 'utf-8');
+  await fs.writeFile('output/stations.json', JSON.stringify(finalList, null, 2), 'utf-8');
   console.log(`✅ Curated ${curated.length} stations → output/stations.json`);
 }
 
